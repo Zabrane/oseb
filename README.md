@@ -9,7 +9,8 @@ Nova, Swift, Glance and Cinder services. In addition, the following extensions a
 </ul> 
 <br/>
 
-== The API ==
+The API
+-------
 The modules in the application fall into two categories:
 <ul>
 <li>Service modules. These have module names that start with "os_", e.g. os_nova, os_keystone, etc.</li>
@@ -18,7 +19,8 @@ with these modules.</li>
 </ul> 
 <br/>
 
-== Getting Started ==
+Getting Started
+---------------
 The <code>openstack</code> application can be started by executing <code>application:start(openstack)</code>. This application
 depends on the <code>inets</code>, <code>ssl</code> and <code>json_eep</code> applications (i.e. those three applications must
 be started before starting <code>openstack</code>.
@@ -98,4 +100,5 @@ ok
 8> os_nova_volumes:attach(N, "800679", #volumeAttachment{volumeId=90743, device= <<"/dev/vdc">>}).
 {ok,{[{<<"volumeAttachment">>,
        {[{<<"id">>,90743},{<<"volumeId">>,90743}]}}]}}
+```
 
